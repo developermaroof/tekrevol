@@ -1,9 +1,31 @@
-import Header from "./components/Header";
+import {
+  Navbar,
+  Banner,
+  Awards,
+  Achievements,
+  Projects,
+  Skills,
+  Contact,
+  Services,
+  Clients,
+  Trends,
+  Footer,
+} from "./components";
 
 function App() {
   return (
     <div className="App">
-      <Header />
+      <Navbar />
+      <Banner />
+      <Awards />
+      <Achievements />
+      <Projects />
+      <Skills />
+      <Contact />
+      <Services />
+      <Clients />
+      <Trends />
+      <Footer />
     </div>
   );
 }
