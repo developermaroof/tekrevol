@@ -8,14 +8,14 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-black  px-4 sm:px-8 md:px-16 lg:px-20 xl:px-24">
+    <nav class="bg-black px-4 sm:px-8 lg:px-20 xl:px-28 font-sans font-medium">
       <div className="flex mx-auto justify-between items-center py-4">
         <svg
           id="Layer_1"
           data-name="Layer 1"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 300 44"
-          className="w-40 h-8"
+          className="w-32 h-8 sm:w-40 lg:w-44"
         >
           <title>TekRevol</title>
           <path
@@ -67,27 +67,30 @@ const Navbar = () => {
             points="72.78 13.31 62.19 26.2 73.87 38.9 82.35 38.9 70.94 25.65 80.6 13.31 72.78 13.31"
           ></polygon>
         </svg>
-        <div className="hidden md:flex space-x-4">
+        <div className="hidden md:flex space-x-4 md:space-x-5 lg:space-x-6">
           {/* Hide on screens smaller than md (medium) */}
-          <a href="#home" className="text-white">
+          <a href="#home" className="text-white text-xs lg:text-sm">
             Home
           </a>
-          <a href="#about" className="text-white">
+          <a href="#about" className="text-white text-xs lg:text-sm">
             About
           </a>
-          <a href="#services" className="text-white">
+          <a href="#services" className="text-white text-xs lg:text-sm">
             Services
           </a>
-          <a href="#solution" className="text-white">
+          <a href="#solution" className="text-white text-xs lg:text-sm">
             Solution
           </a>
-          <a href="#technologies" className="text-white">
+          <a href="#technologies" className="text-white text-xs lg:text-sm">
             Technologies
           </a>
-          <a href="#location" className="text-white">
+          <a href="#location" className="text-white text-xs  lg:text-sm">
             Location
           </a>
         </div>
+        <button className="hidden md:block lg:py-3 bg-primary text-white uppercase rounded-md text-xs  py-2 px-4">
+          Get a Proposal
+        </button>
         <div className="flex md:hidden space-x-4">
           {/* Show on screens smaller than md (medium) */}
           <svg
@@ -135,23 +138,23 @@ const Navbar = () => {
             <path d="M 0 9 L 0 11 L 50 11 L 50 9 Z M 0 24 L 0 26 L 50 26 L 50 24 Z M 0 39 L 0 41 L 50 41 L 50 39 Z"></path>
           </svg>
         </div>
-        <div className="flex flex-col items-center mt-8">
-          <a href="#home" className="text-white py-2">
+        <div className="flex flex-col items-center mt-20">
+          <a href="#home" className="text-white py-4">
             Home
           </a>
-          <a href="#about" className="text-white py-2">
+          <a href="#about" className="text-white py-4">
             About
           </a>
-          <a href="#services" className="text-white py-2">
+          <a href="#services" className="text-white py-4">
             Services
           </a>
-          <a href="#solution" className="text-white py-2">
+          <a href="#solution" className="text-white py-4">
             Solution
           </a>
-          <a href="#technologies" className="text-white py-2">
+          <a href="#technologies" className="text-white py-4">
             Technologies
           </a>
-          <a href="#location" className="text-white py-2">
+          <a href="#location" className="text-white py-4">
             Location
           </a>
         </div>
