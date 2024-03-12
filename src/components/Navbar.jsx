@@ -8,7 +8,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav class="bg-black px-4 sm:px-8 lg:px-20 xl:px-28 font-sans font-medium">
+    <nav className="bg-black px-4 sm:px-8 lg:px-20 xl:px-28 font-sans font-medium sticky top-0 w-full z-50">
       <div className="flex mx-auto justify-between items-center py-4">
         <svg
           id="Layer_1"
