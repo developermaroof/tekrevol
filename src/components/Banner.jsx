@@ -21,29 +21,29 @@ const Banner = () => {
 
       {/* Form */}
       <div className="px-4 flex justify-center items-center ">
-        <div className="bg-white w-64 md:w-80 px-10 py-6 rounded-xl text-black my-8 mx-4 sm:mx-8 lg:mx-20 xl:mx-28 flex justify-center items-center">
-          <form className="flex flex-col justify-center items-center">
-            <h2 className="font-semibold text-md text-center mx-auto mb-4">
+        <div className="bg-white w-64 md:w-80 lg:w-96  px-10  py-6 rounded-xl text-black my-8 mx-4 sm:mx-4  lg:mx-16 xl:mx-28 flex justify-center items-center">
+          <form className="flex flex-col justify-center items-center lg:w-96">
+            <h2 className="font-semibold text-md lg:text-lg text-center mx-auto mb-4">
               Let's Start a Project Together
             </h2>
             <div className="bg-primary rounded text-primary h-0.5 w-44 sm:w-44 lg:w-48 mt-1 mb-4 mx-auto"></div>
             <input
-              className="p-2 pl-0 w-full mb-2 border-b border-gray-500 sm:border-b-1.5 sm:border-orange-500 text-xs text-left"
+              className="p-2 pl-0 w-full mb-2 border-b border-gray-500 sm:border-b-1.5 sm:border-orange-500 text-xs lg:text-sm outline-none text-left"
               type="text"
               placeholder="Full Name"
             />
             <input
-              className="p-2 pl-0 w-full mb-2 border-b border-gray-500 sm:border-b-1.5 sm:border-orange-500 text-xs text-left"
-              type="text"
+              className="p-2 pl-0 w-full mb-2 border-b border-gray-500 sm:border-b-1.5 sm:border-orange-500 text-xs lg:text-sm outline-none text-left"
+              type="email"
               placeholder="Email"
             />
             <input
-              className="p-2 pl-0 w-full mb-2 border-b border-gray-500 sm:border-b-1.5 sm:border-orange-500 text-xs text-left"
-              type="text"
+              className="p-2 pl-0 w-full mb-2 border-b border-gray-500 sm:border-b-1.5 sm:border-orange-500 text-xs lg:text-sm outline-none text-left"
+              type="number"
               placeholder="Number"
             />
             <input
-              className="p-2 pl-0 w-full mb-2 border-b border-gray-500 sm:border-b-1.5 sm:border-orange-500 text-xs text-left"
+              className="p-2 pl-0 w-full mb-2 border-b border-gray-500 sm:border-b-1.5 sm:border-orange-500 text-xs lg:text-sm outline-none text-left"
               type="text"
               placeholder="Describe Your Project Need."
             />
