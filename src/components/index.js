@@ -1,6 +1,6 @@
 export { default as Navbar } from "./Navbar";
 export { default as Banner } from "./Banner";
-export { default as Awards } from "./Awards";
+export { default as Sliders } from "./Sliders";
 export { default as Achievements } from "./Achievements";
 export { default as Projects } from "./Projects";
 export { default as Skills } from "./Skills";

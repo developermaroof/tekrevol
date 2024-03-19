@@ -1,7 +1,7 @@
 import {
   Navbar,
   Banner,
-  Awards,
+  Sliders,
   Achievements,
   Projects,
   Skills,
@@ -19,7 +19,7 @@ function App() {
     <div className="App">
       <Navbar />
       <Banner />
-      <Awards />
+      <Sliders />
       <Achievements />
       <Projects />
       <Skills />

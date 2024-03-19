@@ -20,7 +20,7 @@ const responsive = {
   },
 };
 
-const Slider = ({ deviceType, children }) => {
+const Brands = ({ deviceType, children }) => {
   return (
     <div className="bg-black">
       <h2 className=" text-center text-2xl font-bold mb-0 pt-8 text-gray-400">
@@ -58,4 +58,4 @@ const Slider = ({ deviceType, children }) => {
   );
 };
 
-export default Slider;
+export default Brands;
