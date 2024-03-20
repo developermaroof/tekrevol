@@ -5,12 +5,12 @@ import "react-multi-carousel/lib/styles.css";
 const responsive = {
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
-    items: 6,
+    items: 4,
     slidesToSlide: 1,
   },
   tablet: {
     breakpoint: { max: 1024, min: 464 },
-    items: 3,
+    items: 2,
     slidesToSlide: 1,
   },
   mobile: {
@@ -45,7 +45,7 @@ const Awards = ({ deviceType, children }) => {
       >
         {React.Children.map(children, (child, index) => (
           <div className="w-full" key={index}>
-            <div className=" bg-gray-200 h-full p-10 m-4 flex justify-center items-center rounded-3xl ">
+            <div className="bg-gray-100 h-full p-10 m-4 flex justify-center items-center rounded-3xl ">
               {child}
             </div>
           </div>
