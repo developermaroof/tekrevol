@@ -31,7 +31,7 @@ const ProjectSlider = ({ deviceType, children }) => {
         responsive={responsive}
         ssr={true}
         infinite={true}
-        autoPlay={false}
+        autoPlay={true}
         autoPlaySpeed={4000}
         keyBoardControl={true}
         customTransition="all .5s ease-in-out"
@@ -41,6 +41,7 @@ const ProjectSlider = ({ deviceType, children }) => {
         dotListClass="custom-dot-list-style"
         arrows={true} // Show arrows on all devices
         renderButtonGroupOutside={true} // Hide buttons
+        // Pass responsive settings as a prop
       >
         {React.Children.map(children, (child, index) => (
           <div className="w-full " key={index}>

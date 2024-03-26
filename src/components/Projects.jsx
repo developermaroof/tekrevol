@@ -4,10 +4,10 @@ import "../Stylings/projectSlider.css";
 
 const Projects = () => {
   return (
-    <div>
+    <div className="bg-gray-100">
       <ProjectSlider>
-        <div className="bg-blue-300 flex flex-col p-4 overflow-hidden height">
-          <div className="py-6 ">
+        <div className="bg-blue-300 flex flex-col p-4 md:flex-row md:justify-center md:items-center">
+          <div className="py-4 ">
             <img
               src="https://www.tekrevol.com/static/case_img1-be030b03f79c77a145859c6300f5c6ac.webp"
               alt=""
@@ -17,10 +17,10 @@ const Projects = () => {
             <img
               src="data:image/webp;base64,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"
               alt=""
-              className="w-12 pb-6"
+              className="w-12 pb-4"
             />
             <h1 className="text-2xl text-gray-700 font-bold">OZ Leasing</h1>
-            <p className="py-6 text-sm">
+            <p className="py-4 text-sm">
               OZ Leasing, a disruptive tech start-up, aims to simplify car
               leasing in the automotive industry. Our team developed a
               comprehensive web and mobile app solution, streamlining the
@@ -45,7 +45,7 @@ const Projects = () => {
             </button>
           </div>
         </div>
-        <div className="bg-gray-300 flex flex-col p-4">
+        <div className="bg-gray-300 flex flex-col p-4 md:flex-row md:justify-center md:items-center">
           <div className="py-6">
             <img
               src="https://www.tekrevol.com/static/case_img2-ad725916bebaa4ac0d6a1f8f041354de.webp"
@@ -86,8 +86,8 @@ const Projects = () => {
             </button>
           </div>
         </div>
-        <div className="bg-blue-100 flex flex-col p-4 height">
-          <div className="py-6">
+        <div className="bg-blue-100 flex flex-col p-4  md:flex-row md:justify-center md:items-center">
+          <div className="py-4">
             <img
               src="https://www.tekrevol.com/static/case_img3-29e8aed320a074bb5d00cfcddae6a6de.webp"
               alt=""
@@ -97,10 +97,10 @@ const Projects = () => {
             <img
               src="data:image/webp;base64,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"
               alt=""
-              className="w-32 pb-6"
+              className="w-32 pb-4"
             />
             <h1 className="text-2xl text-gray-700 font-bold">Linkfront</h1>
-            <p className="py-6 text-sm">
+            <p className="py-4 text-sm">
               Linkfront, an innovative shopping web app, approached us to
               redefine the online retail landscape. We created a dynamic
               platform that seamlessly integrates with e-commerce websites,
