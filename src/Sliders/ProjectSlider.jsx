@@ -1,7 +1,6 @@
 import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import "../Stylings/projectSlider.css";
 
 const responsive = {
   desktop: {
@@ -44,7 +43,7 @@ const ProjectSlider = ({ deviceType, children }) => {
         renderButtonGroupOutside={true} // Hide buttons
       >
         {React.Children.map(children, (child, index) => (
-          <div className="w-full" key={index}>
+          <div className="w-full " key={index}>
             <div className="h-full">{child}</div>
           </div>
         ))}
