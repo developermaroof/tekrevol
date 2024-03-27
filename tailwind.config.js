@@ -8,6 +8,7 @@ module.exports = {
       },
       colors: {
         primary: "#ef5123",
+        skillsHeading: "#314252",
       },
     },
   },
