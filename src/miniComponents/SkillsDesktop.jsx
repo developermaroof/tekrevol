@@ -9,13 +9,13 @@ const SkillsDesktop = () => {
 
   return (
     <div className="bg-gray-100 p-4">
-      <div className="flex justify-center items-center w-full gap-10">
-        <div className="w-1/2">
+      <div className="flex justify-center items-center w-full gap-10 lg:gap-0 lg:px-8">
+        <div className="w-full">
           <h1 className="font-bold text-skillsHeading text-3xl">
             Tech-stack for Our Website Development Firm
           </h1>
         </div>
-        <div className="w-1/2">
+        <div className="w-full">
           <p className="py-6 text-xs text-gray-600">
             As an experienced website development firm, we understand the
             significance of the latest technologies to give a competitive edge
@@ -25,11 +25,11 @@ const SkillsDesktop = () => {
           </p>
         </div>
       </div>
-      <div className="flex mt-8 justify-center text-center items-center gap-10">
+      <div className="flex mt-8 justify-center text-center items-center gap-10 lg:justify-start lg:pl-8 lg:gap-16">
         <div>
           <h2
-            className={`font-bold text-md text-skillsHeading cursor-pointer ${
-              activeSection === "frontend" ? "text-orange-500" : ""
+            className={`font-bold text-md text-skillsHeading cursor-pointer lg:text-lg ${
+              activeSection === "frontend" ? "text-orange-400" : ""
             }`}
             onClick={() => toggleVisibility("frontend")}
           >
@@ -39,7 +39,7 @@ const SkillsDesktop = () => {
         <div>
           <h2
             className={`font-bold text-md text-skillsHeading cursor-pointer ${
-              activeSection === "backend" ? "text-orange-500" : ""
+              activeSection === "backend" ? "text-orange-400" : ""
             }`}
             onClick={() => toggleVisibility("backend")}
           >
@@ -49,7 +49,7 @@ const SkillsDesktop = () => {
         <div>
           <h2
             className={`font-bold text-md text-skillsHeading cursor-pointer ${
-              activeSection === "databases" ? "text-orange-500" : ""
+              activeSection === "databases" ? "text-orange-400" : ""
             }`}
             onClick={() => toggleVisibility("databases")}
           >
@@ -59,7 +59,7 @@ const SkillsDesktop = () => {
         <div>
           <h2
             className={`font-bold text-md text-skillsHeading cursor-pointer ${
-              activeSection === "tools" ? "text-orange-500" : ""
+              activeSection === "tools" ? "text-orange-400" : ""
             }`}
             onClick={() => toggleVisibility("tools")}
           >
@@ -69,7 +69,7 @@ const SkillsDesktop = () => {
         <div>
           <h2
             className={`font-bold text-md text-skillsHeading cursor-pointer ${
-              activeSection === "operatingSystems" ? "text-orange-500" : ""
+              activeSection === "operatingSystems" ? "text-orange-400" : ""
             }`}
             onClick={() => toggleVisibility("operatingSystems")}
           >
