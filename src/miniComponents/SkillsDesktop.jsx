@@ -1,32 +1,10 @@
 import React, { useState } from "react";
 
 const SkillsDesktop = () => {
-  const [showFrontend, setShowFrontend] = useState(false);
-  const [showBackend, setShowBackend] = useState(false);
-  const [showDatabases, setShowDatabases] = useState(false);
-  const [showTools, setShowTools] = useState(false);
-  const [showOperatingSystems, setShowOperatingSystems] = useState(false);
+  const [activeSection, setActiveSection] = useState("frontend");
 
-  const toggleVisibility = (list) => {
-    switch (list) {
-      case "frontend":
-        setShowFrontend(!showFrontend);
-        break;
-      case "backend":
-        setShowBackend(!showBackend);
-        break;
-      case "databases":
-        setShowDatabases(!showDatabases);
-        break;
-      case "tools":
-        setShowTools(!showTools);
-        break;
-      case "operatingSystems":
-        setShowOperatingSystems(!showOperatingSystems);
-        break;
-      default:
-        break;
-    }
+  const toggleVisibility = (section) => {
+    setActiveSection(section === activeSection ? null : section);
   };
 
   return (
@@ -47,84 +25,142 @@ const SkillsDesktop = () => {
           </p>
         </div>
       </div>
-
-      <div className="flex flex-row">
-        <h2
-          className="font-bold text-lg text-skillsHeading cursor-pointer"
-          onClick={() => toggleVisibility("frontend")}
-        >
-          Front-end
-        </h2>
-        {showFrontend && (
-          <ul className="px-4 text-sm list-disc my-2">
-            <li>HTML & CSS</li>
-            <li>JavaScript</li>
-            <li>React</li>
-            <li>jQuery</li>
-            <li>Angular</li>
-          </ul>
-        )}
+      <div className="flex mt-8 justify-center text-center items-center gap-10">
+        <div>
+          <h2
+            className={`font-bold text-md text-skillsHeading cursor-pointer ${
+              activeSection === "frontend" ? "text-orange-500" : ""
+            }`}
+            onClick={() => toggleVisibility("frontend")}
+          >
+            Front-end
+          </h2>
+        </div>
+        <div>
+          <h2
+            className={`font-bold text-md text-skillsHeading cursor-pointer ${
+              activeSection === "backend" ? "text-orange-500" : ""
+            }`}
+            onClick={() => toggleVisibility("backend")}
+          >
+            Back-end
+          </h2>
+        </div>
+        <div>
+          <h2
+            className={`font-bold text-md text-skillsHeading cursor-pointer ${
+              activeSection === "databases" ? "text-orange-500" : ""
+            }`}
+            onClick={() => toggleVisibility("databases")}
+          >
+            Databases
+          </h2>
+        </div>
+        <div>
+          <h2
+            className={`font-bold text-md text-skillsHeading cursor-pointer ${
+              activeSection === "tools" ? "text-orange-500" : ""
+            }`}
+            onClick={() => toggleVisibility("tools")}
+          >
+            Tools
+          </h2>
+        </div>
+        <div>
+          <h2
+            className={`font-bold text-md text-skillsHeading cursor-pointer ${
+              activeSection === "operatingSystems" ? "text-orange-500" : ""
+            }`}
+            onClick={() => toggleVisibility("operatingSystems")}
+          >
+            Operating Systems
+          </h2>
+        </div>
       </div>
-      <div className="flex flex-row">
-        <h2
-          className="font-bold text-lg text-skillsHeading cursor-pointer"
-          onClick={() => toggleVisibility("backend")}
-        >
-          Back-end
-        </h2>
-        {showBackend && (
-          <ul className="px-4 text-sm list-disc my-2">
-            <li>PHP (Laravel)</li>
-            <li>Java</li>
-            <li>Ruby</li>
-            <li>C#</li>
-            <li>Angular</li>
-          </ul>
-        )}
-      </div>
-      <div className="flex flex-row">
-        <h2
-          className="font-bold text-lg text-skillsHeading cursor-pointer"
-          onClick={() => toggleVisibility("databases")}
-        >
-          Databases
-        </h2>
-        {showDatabases && (
-          <ul className="px-4 text-sm list-disc my-2">
-            <li>MySQL</li>
-            <li>MongoDB</li>
-            <li>Oracle Database</li>
-          </ul>
-        )}
-      </div>
-      <div className="flex flex-row">
-        <h2
-          className="font-bold text-lg text-skillsHeading cursor-pointer"
-          onClick={() => toggleVisibility("tools")}
-        >
-          Tools
-        </h2>
-        {showTools && (
-          <ul className="px-4 text-sm list-disc my-2">
-            <li>Sublime Tex</li>
-            <li>Visual Studio Code</li>
-            <li>Atom</li>
-            <li>CodePen</li>
-          </ul>
-        )}
-      </div>
-      <div className="flex flex-row">
-        <h2
-          className="font-bold text-lg text-skillsHeading cursor-pointer"
-          onClick={() => toggleVisibility("operatingSystems")}
-        >
-          Operating Systems
-        </h2>
-        {showOperatingSystems && (
-          <ul className="px-4 text-sm list-disc my-2 mb-6">
-            <li>Microsoft Windows</li>
-            <li>macOS</li>
-            <li>Linux</li>
+      <div className="mt-3 w-full h-0.5 bg-gray-300"></div>
+      <div className="mt-4">
+        {activeSection && (
+          <ul className="px-4 text-sm my-2 flex gap-8">
+            {activeSection === "frontend" && (
+              <>
+                <li className="font-semibold bg-white w-full p-2 text-skillsHeading text-center">
+                  HTML & CSS
+                </li>
+                <li className="font-semibold bg-white w-full p-2 text-skillsHeading text-center">
+                  JavaScript
+                </li>
+                <li className="font-semibold bg-white w-full p-2 text-skillsHeading text-center">
+                  React
+                </li>
+                <li className="font-semibold bg-white w-full p-2 text-skillsHeading text-center">
+                  jQuery
+                </li>
+                <li className="font-semibold bg-white w-full p-2 text-skillsHeading text-center">
+                  Angular
+                </li>
+              </>
+            )}
+            {activeSection === "backend" && (
+              <>
+                <li className="font-semibold bg-white w-full p-2 text-skillsHeading text-center">
+                  PHP (Laravel)
+                </li>
+                <li className="font-semibold bg-white w-full p-2 text-skillsHeading text-center">
+                  Java
+                </li>
+                <li className="font-semibold bg-white w-full p-2 text-skillsHeading text-center">
+                  Ruby
+                </li>
+                <li className="font-semibold bg-white w-full p-2 text-skillsHeading text-center">
+                  C#
+                </li>
+                <li className="font-semibold bg-white w-full p-2 text-skillsHeading text-center">
+                  Angular
+                </li>
+              </>
+            )}
+            {activeSection === "databases" && (
+              <>
+                <li className="font-semibold bg-white w-full p-2 text-skillsHeading text-center">
+                  MySQL
+                </li>
+                <li className="font-semibold bg-white w-full p-2 text-skillsHeading text-center">
+                  MongoDB
+                </li>
+                <li className="font-semibold bg-white w-full p-2 text-skillsHeading text-center">
+                  Oracle Database
+                </li>
+              </>
+            )}
+            {activeSection === "tools" && (
+              <>
+                <li className="font-semibold bg-white w-full p-2 text-skillsHeading text-center">
+                  Sublime Text
+                </li>
+                <li className="font-semibold bg-white w-full p-2 text-skillsHeading text-center">
+                  Visual Studio Code
+                </li>
+                <li className="font-semibold bg-white w-full p-2 text-skillsHeading text-center">
+                  Atom
+                </li>
+                <li className="font-semibold bg-white w-full p-2 text-skillsHeading text-center">
+                  CodePen
+                </li>
+              </>
+            )}
+            {activeSection === "operatingSystems" && (
+              <>
+                <li className="font-semibold bg-white w-full p-2 text-skillsHeading text-center">
+                  Microsoft Windows
+                </li>
+                <li className="font-semibold bg-white w-full p-2 text-skillsHeading text-center">
+                  macOS
+                </li>
+                <li className="font-semibold bg-white w-full p-2 text-skillsHeading text-center">
+                  Linux
+                </li>
+              </>
+            )}
           </ul>
         )}
       </div>
