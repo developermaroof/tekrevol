@@ -29,7 +29,7 @@ const SkillsDesktop = () => {
         <div>
           <h2
             className={`font-bold text-md text-skillsHeading cursor-pointer lg:text-lg ${
-              activeSection === "frontend" ? "text-orange-400" : ""
+              activeSection === "frontend" ? "text-orange-600" : ""
             }`}
             onClick={() => toggleVisibility("frontend")}
           >
@@ -39,7 +39,7 @@ const SkillsDesktop = () => {
         <div>
           <h2
             className={`font-bold text-md text-skillsHeading cursor-pointer ${
-              activeSection === "backend" ? "text-orange-400" : ""
+              activeSection === "backend" ? "text-orange-600" : ""
             }`}
             onClick={() => toggleVisibility("backend")}
           >
@@ -49,7 +49,7 @@ const SkillsDesktop = () => {
         <div>
           <h2
             className={`font-bold text-md text-skillsHeading cursor-pointer ${
-              activeSection === "databases" ? "text-orange-400" : ""
+              activeSection === "databases" ? "text-orange-600" : ""
             }`}
             onClick={() => toggleVisibility("databases")}
           >
@@ -59,7 +59,7 @@ const SkillsDesktop = () => {
         <div>
           <h2
             className={`font-bold text-md text-skillsHeading cursor-pointer ${
-              activeSection === "tools" ? "text-orange-400" : ""
+              activeSection === "tools" ? "text-orange-600" : ""
             }`}
             onClick={() => toggleVisibility("tools")}
           >
@@ -69,7 +69,7 @@ const SkillsDesktop = () => {
         <div>
           <h2
             className={`font-bold text-md text-skillsHeading cursor-pointer ${
-              activeSection === "operatingSystems" ? "text-orange-400" : ""
+              activeSection === "operatingSystems" ? "text-orange-600" : ""
             }`}
             onClick={() => toggleVisibility("operatingSystems")}
           >
