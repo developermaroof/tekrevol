@@ -3,25 +3,31 @@ import "../Stylings/services.css";
 
 const Services = () => {
   // Replace 'image-url.jpg' with the actual image URL
-  const backgroundImageUrl =
+  const webbackgroundImageUrl =
     "https://images.pexels.com/photos/1181676/pexels-photo-1181676.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2";
+  const mobilebackgroundImageUrl =
+    "https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2";
+  const strategybackgroundImageUrl =
+    "https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2";
+  const itstaffbackgroundImageUrl =
+    "https://images.pexels.com/photos/3415148/pexels-photo-3415148.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2";
 
   return (
-    <div className="flex flex-col overflow-y-auto">
+    <div className="flex flex-col md:flex-row overflow-y-auto">
       <div
-        className="service-wrapper"
+        className="service-wrapper md:flex md:flex-col  md:h-68 lg:h-96 md:w-1/4 "
         style={{
-          backgroundImage: `url(${backgroundImageUrl})`,
+          backgroundImage: `url(${webbackgroundImageUrl})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
       >
-        <div className="service-content p-4 py-6 pt-10 ">
+        <div className="service-content md:flex md:flex-col p-4 py-6 pt-10 ">
           <p className="text-white text-xxs">
             Crafting dynamic and responsive web applications that elevate your
             online presence through cutting-edge technology and design.
           </p>
-          <ul className="flex flex-col  text-xxs px-4 text-white text-sm list-disc my-2">
+          <ul className="flex flex-col md:flex-col  text-xxs px-4 text-white text-sm list-disc my-2">
             <li>Custom Web Application Development</li>
             <li>Website Design and Development</li>
             <li>Web Portal Development</li>
@@ -69,19 +75,19 @@ const Services = () => {
         </div>
       </div>
       <div
-        className="service-wrapper"
+        className="service-wrapper md:flex md:flex-col  md:h-68 lg:h-96 md:w-1/4"
         style={{
-          backgroundImage: `url(${backgroundImageUrl})`,
+          backgroundImage: `url(${mobilebackgroundImageUrl})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
       >
-        <div className="service-content p-4 py-6 pt-10">
+        <div className="service-content md:flex md:flex-col p-4 py-6 pt-10">
           <p className="text-white text-xxs">
             Transforming ideas into intuitive, high-performance mobile
             experiences for seamless user engagement.
           </p>
-          <ul className="flex flex-col  text-xxs px-4 text-white text-sm list-disc my-2">
+          <ul className="flex flex-col md:flex-col  text-xxs px-4 text-white text-sm list-disc my-2">
             <li>Android App Development</li>
             <li>iOS App Development</li>
             <li>Cross-Platform App Development</li>
@@ -111,19 +117,19 @@ const Services = () => {
         </div>
       </div>
       <div
-        className="service-wrapper"
+        className="service-wrapper md:flex md:flex-col  md:h-68 lg:h-96 md:w-1/4"
         style={{
-          backgroundImage: `url(${backgroundImageUrl})`,
+          backgroundImage: `url(${strategybackgroundImageUrl})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
       >
-        <div className="service-content p-4 py-6 pt-10">
+        <div className="service-content md:flex md:flex-col p-4 py-6 pt-10">
           <p className="text-white text-xxs">
             Strategic insights guiding your digital journey, ensuring success in
             the evolving web and app development world.
           </p>
-          <ul className="flex flex-col  text-xxs px-4 text-white text-sm list-disc my-2">
+          <ul className="flex flex-col md:flex-col  text-xxs px-4 text-white text-sm list-disc my-2">
             <li>Cloud Computing</li>
             <li>CTO Consultancy</li>
             <li>Emerging Technology</li>
@@ -158,19 +164,19 @@ const Services = () => {
         </div>
       </div>
       <div
-        className="service-wrapper"
+        className="service-wrapper md:flex md:flex-col  md:h-68 lg:h-96 md:w-1/4"
         style={{
-          backgroundImage: `url(${backgroundImageUrl})`,
+          backgroundImage: `url(${itstaffbackgroundImageUrl})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
       >
-        <div className="service-content p-4 py-6 pt-10">
+        <div className="service-content md:flex md:flex-col p-4 py-6 pt-10">
           <p className="text-white text-xxs">
             Boosting project efficiency with skilled professionals seamlessly
             integrated into your team. We have hiring models for
           </p>
-          <ul className="flex flex-col  text-xxs px-4 text-white text-sm list-disc my-2">
+          <ul className="flex flex-col md:flex-col  text-xxs px-4 text-white text-sm list-disc my-2">
             <li>Dedicated Teams</li>
             <li>Individual Resources</li>
             <li>Project Outsourcing</li>
