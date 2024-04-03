@@ -3,25 +3,10 @@ import "../Stylings/services.css";
 
 const Services = () => {
   // Replace 'image-url.jpg' with the actual image URL
-  const webbackgroundImageUrl =
-    "https://images.pexels.com/photos/1181676/pexels-photo-1181676.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2";
-  const mobilebackgroundImageUrl =
-    "https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2";
-  const strategybackgroundImageUrl =
-    "https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2";
-  const itstaffbackgroundImageUrl =
-    "https://images.pexels.com/photos/3415148/pexels-photo-3415148.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2";
 
   return (
     <div className="flex flex-col md:flex-row overflow-y-auto">
-      <div
-        className="service-wrapper md:flex md:flex-col  md:h-68 lg:h-96 md:w-1/4 "
-        style={{
-          backgroundImage: `url(${webbackgroundImageUrl})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      >
+      <div className="service-wrapper webbackground md:flex md:flex-col  md:h-68 lg:h-96 md:w-1/4 ">
         <div className="service-content md:flex md:flex-col p-4 py-6 pt-10 ">
           <p className="text-white text-xxs">
             Crafting dynamic and responsive web applications that elevate your
@@ -74,14 +59,7 @@ const Services = () => {
           </p>
         </div>
       </div>
-      <div
-        className="service-wrapper md:flex md:flex-col  md:h-68 lg:h-96 md:w-1/4"
-        style={{
-          backgroundImage: `url(${mobilebackgroundImageUrl})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      >
+      <div className="service-wrapper mobilebackground md:flex md:flex-col  md:h-68 lg:h-96 md:w-1/4">
         <div className="service-content md:flex md:flex-col p-4 py-6 pt-10">
           <p className="text-white text-xxs">
             Transforming ideas into intuitive, high-performance mobile
@@ -116,14 +94,7 @@ const Services = () => {
           </p>
         </div>
       </div>
-      <div
-        className="service-wrapper md:flex md:flex-col  md:h-68 lg:h-96 md:w-1/4"
-        style={{
-          backgroundImage: `url(${strategybackgroundImageUrl})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      >
+      <div className="service-wrapper strategybackground md:flex md:flex-col  md:h-68 lg:h-96 md:w-1/4">
         <div className="service-content md:flex md:flex-col p-4 py-6 pt-10">
           <p className="text-white text-xxs">
             Strategic insights guiding your digital journey, ensuring success in
@@ -163,14 +134,7 @@ const Services = () => {
           </p>
         </div>
       </div>
-      <div
-        className="service-wrapper md:flex md:flex-col  md:h-68 lg:h-96 md:w-1/4"
-        style={{
-          backgroundImage: `url(${itstaffbackgroundImageUrl})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      >
+      <div className="service-wrapper itstaffbackground md:flex md:flex-col  md:h-68 lg:h-96 md:w-1/4">
         <div className="service-content md:flex md:flex-col p-4 py-6 pt-10">
           <p className="text-white text-xxs">
             Boosting project efficiency with skilled professionals seamlessly
