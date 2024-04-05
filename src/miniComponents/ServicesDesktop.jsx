@@ -9,15 +9,15 @@ const ServicesDesktop = () => {
           <img
             src="https://images.pexels.com/photos/1181676/pexels-photo-1181676.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
             alt=""
-            className="object-cover w-full h-full"
+            className="object-cover w-full h-96"
           />
-          <div className="content w-full h-full absolute top-0 left-0 flex justify-center items-center flex-col">
-            <div className="px-4  flex flex-col gap-4 w-full  justify-center mt-8  ">
-              <p className="text-white text-xs ">
+          <div className="content w-full h-96 absolute top-0 left-0 flex justify-center items-center flex-col">
+            <div className="px-4 flex flex-col w-full justify-center lg:gap-2 lg:mb-16">
+              <p className="text-white text-xxs lg:text-xs">
                 Crafting dynamic and responsive web applications that elevate
                 your online presence through cutting-edge technology and design.
               </p>
-              <ul className="flex flex-col gap-2   text-xs px-4 text-white text-sm list-disc my-2">
+              <ul className="flex flex-col text-xxs px-4 text-white  list-disc mt-2 lg:text-sm">
                 <li>Custom Web Application Development</li>
                 <li>Website Design and Development</li>
                 <li>Web Portal Development</li>
@@ -25,7 +25,7 @@ const ServicesDesktop = () => {
                 <li>Ecommerce Development</li>
                 <li>CMS Development</li>
               </ul>
-              <div className="flex flex-col items-center justify-end w-36 mt-4 ">
+              <div className="flex flex-col items-center justify-end w-36 mt-6 lg:justify-start lg:absolute lg:left-2 lg:bottom-6">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 64 64"
@@ -60,7 +60,7 @@ const ServicesDesktop = () => {
                     ></path>
                   </g>
                 </svg>
-                <p className="text-white text-sm mt-2 font-semibold">
+                <p className="text-white text-xs lg:text-sm mt-2 font-semibold">
                   Web Development
                 </p>
               </div>
@@ -74,23 +74,21 @@ const ServicesDesktop = () => {
           <img
             src="https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
             alt=""
-            className="object-cover w-full h-full"
+            className="object-cover w-full h-96"
           />
-          <div className="content w-full h-full absolute top-0 left-0 flex justify-center items-center flex-col">
-            <div className="px-4  flex flex-col gap-4 w-full  justify-center mt-8  ">
-              <p className="text-white text-xs ">
-                Crafting dynamic and responsive web applications that elevate
-                your online presence through cutting-edge technology and design.
+          <div className="content w-full h-96 absolute top-0 left-0 flex justify-center items-center flex-col">
+            <div className="px-4 flex flex-col w-full justify-center lg:gap-2 lg:mb-16">
+              <p className="text-white text-xxs lg:text-xs">
+                Transforming ideas into intuitive, high-performance mobile
+                experiences for seamless user engagement.
               </p>
-              <ul className="flex flex-col gap-2   text-xs px-4 text-white text-sm list-disc my-2">
-                <li>Custom Web Application Development</li>
-                <li>Website Design and Development</li>
-                <li>Web Portal Development</li>
-                <li>UI &amp; UX Design</li>
-                <li>Ecommerce Development</li>
-                <li>CMS Development</li>
+              <ul className="flex flex-col text-xxs px-4 text-white  list-disc mt-2 lg:text-sm">
+                <li>Android App Development</li>
+                <li>iOS App Development</li>
+                <li>Cross-Platform App Development</li>
+                <li>Game App Development</li>
               </ul>
-              <div className="flex flex-col items-center justify-end w-36 mt-4 ">
+              <div className="flex flex-col items-center justify-end w-36 mt-6 lg:w-40 lg:justify-start lg:absolute lg:left-2 lg:bottom-6">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 692.672 1010"
@@ -109,7 +107,7 @@ const ServicesDesktop = () => {
                     class="colordab466 svgShape"
                   ></path>
                 </svg>
-                <p className="text-white text-sm mt-2 font-semibold">
+                <p className="text-white text-xs mt-2 font-semibold">
                   Mobile App Development
                 </p>
               </div>
@@ -123,23 +121,24 @@ const ServicesDesktop = () => {
           <img
             src="https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
             alt=""
-            className="object-cover w-full h-full"
+            className="object-cover w-full h-96"
           />
-          <div className="content w-full h-full absolute top-0 left-0 flex justify-center items-center flex-col">
-            <div className="px-4  flex flex-col gap-4 w-full  justify-center mt-8  ">
-              <p className="text-white text-xs ">
-                Crafting dynamic and responsive web applications that elevate
-                your online presence through cutting-edge technology and design.
+          <div className="content w-full h-96 absolute top-0 left-0 flex justify-center items-center flex-col">
+            <div className="px-4 flex flex-col w-full justify-center lg:gap-2 lg:mb-16">
+              <p className="text-white text-xxs lg:text-xs">
+                Strategic insights guiding your digital journey, ensuring
+                success in the evolving web and app development world.
               </p>
-              <ul className="flex flex-col gap-2   text-xs px-4 text-white text-sm list-disc my-2">
-                <li>Custom Web Application Development</li>
-                <li>Website Design and Development</li>
-                <li>Web Portal Development</li>
-                <li>UI &amp; UX Design</li>
-                <li>Ecommerce Development</li>
-                <li>CMS Development</li>
+              <ul className="flex flex-col text-xxs px-4 text-white  list-disc mt-2 lg:text-sm">
+                <li>Cloud Computing</li>
+                <li>CTO Consultancy</li>
+                <li>Emerging Technology</li>
+                <li>Digital Transformation</li>
+                <li>Digital Marketplace</li>
+                <li>Data Analytics</li>
+                <li>Digital Strategy</li>
               </ul>
-              <div className="flex flex-col items-center justify-end w-36 mt-4 ">
+              <div className="flex flex-col items-center justify-end w-36 mt-6 lg:justify-start lg:absolute lg:left-2 lg:bottom-6">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 23 32"
@@ -160,7 +159,7 @@ const ServicesDesktop = () => {
                     ></path>
                   </g>
                 </svg>
-                <p className="text-white text-sm mt-2 font-semibold">
+                <p className="text-white text-xs mt-2 font-semibold">
                   Strategy & Consulting
                 </p>
               </div>
@@ -174,23 +173,20 @@ const ServicesDesktop = () => {
           <img
             src="https://images.pexels.com/photos/3415148/pexels-photo-3415148.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
             alt=""
-            className="object-cover w-full h-full"
+            className="object-cover w-full h-96"
           />
-          <div className="content w-full h-full absolute top-0 left-0 flex justify-center items-center flex-col">
-            <div className="px-4  flex flex-col gap-4 w-full  justify-center mt-8  ">
-              <p className="text-white text-xs ">
-                Crafting dynamic and responsive web applications that elevate
-                your online presence through cutting-edge technology and design.
+          <div className="content w-full h-96 absolute top-0 left-0 flex justify-center items-center flex-col">
+            <div className="px-4 flex flex-col w-full justify-center lg:gap-2 lg:mb-16">
+              <p className="text-white text-xxs lg:text-xs">
+                Boosting project efficiency with skilled professionals
+                seamlessly integrated into your team. We have hiring models for
               </p>
-              <ul className="flex flex-col gap-2   text-xs px-4 text-white text-sm list-disc my-2">
-                <li>Custom Web Application Development</li>
-                <li>Website Design and Development</li>
-                <li>Web Portal Development</li>
-                <li>UI &amp; UX Design</li>
-                <li>Ecommerce Development</li>
-                <li>CMS Development</li>
+              <ul className="flex flex-col text-xxs px-4 text-white text-sm list-disc my-2">
+                <li>Dedicated Teams</li>
+                <li>Individual Resources</li>
+                <li>Project Outsourcing</li>
               </ul>
-              <div className="flex flex-col items-center justify-end w-36 mt-4 ">
+              <div className="flex flex-col items-center justify-end w-36 mt-6 lg:justify-start lg:absolute lg:left-2 lg:bottom-6">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   enable-background="new 0 0 66 66"
@@ -213,7 +209,7 @@ const ServicesDesktop = () => {
                     ></path>
                   </g>
                 </svg>
-                <p className="text-white text-sm mt-2 font-semibold">
+                <p className="text-white text-xs mt-2 font-semibold">
                   IT Staff Augmentation
                 </p>
               </div>

@@ -4,7 +4,7 @@ import "../Stylings/servicesMobile.css";
 const ServicesMobile = () => {
   return (
     <div className="flex flex-col overflow-y-auto ">
-      <div className="service-wrapper webbackground     lg:h-96  ">
+      <div className="service-wrapper webbackground ">
         <div className="service-content  - p-4 py-6 pt-10 ">
           <p className="text-white text-xxs">
             Crafting dynamic and responsive web applications that elevate your
@@ -57,7 +57,7 @@ const ServicesMobile = () => {
           </p>
         </div>
       </div>
-      <div className="service-wrapper mobilebackground     lg:h-96 ">
+      <div className="service-wrapper mobilebackground ">
         <div className="service-content   p-4 py-6 pt-10">
           <p className="text-white text-xxs">
             Transforming ideas into intuitive, high-performance mobile
@@ -92,7 +92,7 @@ const ServicesMobile = () => {
           </p>
         </div>
       </div>
-      <div className="service-wrapper strategybackground     lg:h-96 ">
+      <div className="service-wrapper strategybackground ">
         <div className="service-content   p-4 py-6 pt-10">
           <p className="text-white text-xxs">
             Strategic insights guiding your digital journey, ensuring success in
@@ -132,7 +132,7 @@ const ServicesMobile = () => {
           </p>
         </div>
       </div>
-      <div className="service-wrapper itstaffbackground    lg:h-96 ">
+      <div className="service-wrapper itstaffbackground">
         <div className="service-content  p-4 py-6 pt-10">
           <p className="text-white text-xxs">
             Boosting project efficiency with skilled professionals seamlessly
