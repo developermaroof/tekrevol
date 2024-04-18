@@ -10,7 +10,7 @@ const Navbar = () => {
   return (
     <nav className="bg-black px-4 sm:px-8 lg:px-20 xl:px-28 font-sans font-medium sticky top-0 z-50">
       <div className="flex mx-auto justify-between items-center py-4">
-        <a href="https://internproj1.netlify.app/">
+        <a href="#Bannerr">
           <svg
             id="Layer_1"
             data-name="Layer 1"

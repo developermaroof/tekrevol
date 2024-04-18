@@ -5,7 +5,10 @@ const Banner = () => {
     // Banner
     <div className="pb-4 font-sans bg-black text-white sm:flex sm:flex-row">
       {/* Intro */}
-      <div className="px-4 sm:px-8 lg:px-20 xl:px-28  sm:justify-center  sm:flex sm:flex-col ">
+      <div
+        id="Bannerr"
+        className="px-4 sm:px-8 lg:px-20 xl:px-28  sm:justify-center  sm:flex sm:flex-col "
+      >
         <h1 className="font-bold text-3xl sm:text-4xl md:text-4xl lg:text-4xl xl:text-5xl flex flex-wrap">
           <span className="text-primary">#1WEB </span>
           DEVELOPMENT COMPANY
