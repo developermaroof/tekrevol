@@ -22,7 +22,25 @@ const Banner = () => {
       {/* Form */}
       <div className="px-4 flex justify-center items-center ">
         <div className="bg-white w-64 md:w-80 lg:w-96  px-10  py-6 rounded-xl text-black my-8 mx-4 sm:mx-4  lg:mx-16 xl:mx-28 flex justify-center items-center">
-          <form className="flex flex-col justify-center items-center lg:w-96">
+          <form
+            className="flex flex-col justify-center items-center lg:w-96"
+            onSubmit={(e) => {
+              e.preventDefault();
+              const formData = new FormData(e.target);
+              const fullName = formData.get("fullName");
+              const email = formData.get("email");
+              const number = formData.get("number");
+              const description = formData.get("description");
+
+              if (!fullName || !email || !number || !description) {
+                alert("Please fill in all required fields.");
+                return;
+              }
+              alert(
+                `Full Name: ${fullName}\nEmail: ${email}\nNumber: ${number}\nDescription: ${description}`
+              );
+            }}
+          >
             <h2 className="font-semibold text-md lg:text-lg text-center mx-auto mb-4">
               Let's Start a Project Together
             </h2>
@@ -30,24 +48,35 @@ const Banner = () => {
             <input
               className="p-2 pl-0 w-full mb-2 border-b border-gray-500 sm:border-b-1.5 sm:border-orange-500 text-xs lg:text-sm outline-none text-left"
               type="text"
+              name="fullName"
               placeholder="Full Name"
+              required
             />
             <input
               className="p-2 pl-0 w-full mb-2 border-b border-gray-500 sm:border-b-1.5 sm:border-orange-500 text-xs lg:text-sm outline-none text-left"
               type="email"
+              name="email"
               placeholder="Email"
+              required
             />
             <input
               className="p-2 pl-0 w-full mb-2 border-b border-gray-500 sm:border-b-1.5 sm:border-orange-500 text-xs lg:text-sm outline-none text-left"
               type="number"
+              name="number"
               placeholder="Number"
+              required
             />
-            <input
+            <textarea
               className="p-2 pl-0 w-full mb-2 border-b border-gray-500 sm:border-b-1.5 sm:border-orange-500 text-xs lg:text-sm outline-none text-left"
-              type="text"
+              name="description"
               placeholder="Describe Your Project Need."
-            />
-            <button className="text-white bg-primary rounded-md py-1.5 w-full mt-5 mb-1">
+              required
+              rows="4"
+            ></textarea>
+            <button
+              className="text-white bg-primary rounded-md py-1.5 w-full mt-5 mb-1"
+              type="submit"
+            >
               Let's Talk
             </button>
           </form>

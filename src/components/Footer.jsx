@@ -48,29 +48,57 @@ const Footer = () => {
           <p className="text-sm md:text-md lg:text-lg">
             Let’s discuss your project and find out how we can help you scale!
           </p>
-          <form className="mt-4 flex flex-col">
+          <form
+            className="mt-4 flex flex-col"
+            onSubmit={(e) => {
+              e.preventDefault();
+              const formData = new FormData(e.target);
+              const fullName = formData.get("fullName");
+              const email = formData.get("email");
+              const number = formData.get("number");
+              const description = formData.get("description");
+
+              if (!fullName || !email || !number || !description) {
+                alert("Please fill in all required fields.");
+                return;
+              }
+              alert(
+                `Full Name: ${fullName}\nEmail: ${email}\nNumber: ${number}\nDescription: ${description}`
+              );
+            }}
+          >
             <input
               type="text"
+              name="fullName"
               placeholder="Full Name"
+              required
               className="border-b border-white outline-none placeholder-gray-900 text-sm py-2 w-full bg-transparent md:mt-4 md:text-md lg:text-lg"
             />
             <input
               type="email"
+              name="email"
               placeholder="Email"
+              required
               className="border-b border-white outline-none placeholder-gray-900 text-sm py-2 w-full bg-transparent md:mt-4 md:text-md lg:text-lg"
             />
             <input
               type="number"
+              name="number"
               placeholder="Number"
+              required
               className="border-b border-white outline-none placeholder-gray-900 text-sm py-2 w-full bg-transparent md:mt-4 md:text-md lg:text-lg"
             />
             <textarea
               name="description"
               placeholder="Description"
+              required
               className="border-b border-white outline-none placeholder-gray-900 text-sm py-2 w-full bg-transparent md:mt-4 md:text-md lg:text-lg"
               rows="4"
             ></textarea>
-            <button className="rounded bg-primary p-2 mt-6 text-center items-center justify-center lg:text-lg">
+            <button
+              type="submit"
+              className="rounded bg-primary p-2 mt-6 text-center items-center justify-center lg:text-lg"
+            >
               Submit
             </button>
           </form>

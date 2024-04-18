@@ -8,14 +8,14 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-black px-4 sm:px-8 lg:px-20 xl:px-28 font-sans font-medium sticky top-0 w-full z-50">
+    <nav className="bg-black px-4 sm:px-8 lg:px-20 xl:px-28 font-sans font-medium sticky top-0 z-50">
       <div className="flex mx-auto justify-between items-center py-4">
         <svg
           id="Layer_1"
           data-name="Layer 1"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 300 44"
-          className="w-32 h-8 sm:w-40 lg:w-44"
+          className="w-32 h-8 sm:w-40 lg:w-44 cursor-pointer"
         >
           <title>TekRevol</title>
           <path
@@ -67,24 +67,43 @@ const Navbar = () => {
             points="72.78 13.31 62.19 26.2 73.87 38.9 82.35 38.9 70.94 25.65 80.6 13.31 72.78 13.31"
           ></polygon>
         </svg>
+
         <div className="hidden md:flex space-x-4 md:space-x-5 lg:space-x-6">
           {/* Hide on screens smaller than md (medium) */}
-          <a href="#home" className="text-white text-xs lg:text-sm">
+          <a
+            href="#home"
+            className="hover:text-primary text-white text-xs lg:text-sm"
+          >
             Home
           </a>
-          <a href="#about" className="text-white text-xs lg:text-sm">
+          <a
+            href="#about"
+            className="hover:text-primary text-white text-xs lg:text-sm"
+          >
             About
           </a>
-          <a href="#services" className="text-white text-xs lg:text-sm">
+          <a
+            href="#services"
+            className="hover:text-primary text-white text-xs lg:text-sm"
+          >
             Services
           </a>
-          <a href="#solution" className="text-white text-xs lg:text-sm">
+          <a
+            href="#solution"
+            className="hover:text-primary text-white text-xs lg:text-sm"
+          >
             Solution
           </a>
-          <a href="#technologies" className="text-white text-xs lg:text-sm">
+          <a
+            href="#technologies"
+            className="hover:text-primary text-white text-xs lg:text-sm"
+          >
             Technologies
           </a>
-          <a href="#location" className="text-white text-xs  lg:text-sm">
+          <a
+            href="#location"
+            className="hover:text-primary text-white text-xs  lg:text-sm"
+          >
             Location
           </a>
         </div>
@@ -139,22 +158,25 @@ const Navbar = () => {
           </svg>
         </div>
         <div className="flex flex-col items-center mt-20">
-          <a href="#home" className="text-white py-4">
+          <a href="#home" className="hover:text-primary text-white py-4">
             Home
           </a>
-          <a href="#about" className="text-white py-4">
+          <a href="#about" className="hover:text-primary text-white py-4">
             About
           </a>
-          <a href="#services" className="text-white py-4">
+          <a href="#services" className="hover:text-primary text-white py-4">
             Services
           </a>
-          <a href="#solution" className="text-white py-4">
+          <a href="#solution" className="hover:text-primary text-white py-4">
             Solution
           </a>
-          <a href="#technologies" className="text-white py-4">
+          <a
+            href="#technologies"
+            className="hover:text-primary text-white py-4"
+          >
             Technologies
           </a>
-          <a href="#location" className="text-white py-4">
+          <a href="#location" className="hover:text-primary text-white py-4">
             Location
           </a>
         </div>
